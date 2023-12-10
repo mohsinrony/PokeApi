@@ -10,7 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-    background-image:url(background_image.jpeg);
+    background-image:url(assets/background_image.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
