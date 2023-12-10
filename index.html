@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,32 +9,46 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image" href="./Icons/" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Reggae+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>PokeApi</title>
+    <title>PokéAPI</title>
   </head>
   <body>
-    <h1>Pokedex</h1>
-    <div>
-      <nav>
-        <button class="btn">GEN 1</button>
-        <button class="btn">GEN 2</button>
-        <button class="btn">GEN 3</button>
-        <button class="btn">GEN 4</button>
-        <button class="btn">GEN 5</button>
-        <button class="btn">GEN 6</button>
-        <button class="btn">GEN 7</button>
-        <button class="btn">GEN 8</button>
-      </nav>
-      <label for="search">
-        <input type="text" placeholder="Search here" />
-        <button id="searchButton">Search</button>
-      </label>
+    <div class="container">
+      <h1>Pokédex</h1>
+      <p>Choose a Generation to see it's Pokémons</p>
+      <div class="generation-buttons">
+        <button class="generationButton" id="gen1">Gen 1</button>
+        <button class="generationButton" id="gen2">Gen 2</button>
+        <button class="generationButton" id="gen3">Gen 3</button>
+        <button class="generationButton" id="gen4">Gen 4</button>
+        <button class="generationButton" id="gen5">Gen 5</button>
+        <button class="generationButton" id="gen6">Gen 6</button>
+        <button class="generationButton" id="gen7">Gen 7</button>
+        <button class="generationButton" id="gen8">Gen 8</button>
+        <button class="generationButton" id="gen9">Gen 9</button>
+      </div>
+      <div><span class="pokemonNumber"></span></div>
 
+      <label for="search">
+        <input type="text" id="search" placeholder="Search Pokémon by name" />
+        <!-- <button id="searchButton">Search</button> -->
+      </label>
       <div class="cards"></div>
+      <button id="scrollToTopButton" title="Go to top">Top</button>
+      <footer>
+        <h3>Mohsin Rony &copy; 2023</h3>
+      </footer>
     </div>
     <script src="script.js"></script>
   </body>
